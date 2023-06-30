@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Pesos a Dólares</title>
+  <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+  <h1>Conversor de Pesos a Dólares</h1>
+  <center>
+    <table>
+      <tr>
+        <td>
+          <form id="conversion">
+            <label for="monto">Cantidad:</label>
+            <input type="number" id="monto" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="tipo">Tipo de conversión:</label>
+          <select id="tipo" required>
+            <option value="pesos">Pesos a Dólares</option>
+            <option value="dolares">Dólares a Pesos</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="cambio">Valor del dólar:</label>
+          <input type="number" id="cambio" required><br>
+          <center>
+          <button type="submit">CONVERTIR</button>
+          <button type="button" onclick="resetForm()">LIMPIAR</button>
+          </center>
+        </form>
+        <div id="resultado"></div>
+        </td>
+      </tr>
+    </table>
+  </center>
+
+</body>
+</html>
+<script src="Conversion.js"></script>
